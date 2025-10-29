@@ -46,7 +46,7 @@ const parent = React.createElement("div", {id:"parent"},
             React.createElement("h1", {}, "I am number - 1"), 
             React.createElement("h2", {}, "I am number - 2")
         ]),
-        React.createElement("div", {id:"child 1"},
+        React.createElement("div", {id:"child 2"},
         [
             React.createElement("h1", {}, "I am nnumber - 3"),
             React.createElement("h2", {}, "I am number - 4")
