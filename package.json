@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "Learinig core react from sratch from NamasteyDev",
   "scripts": {
+    "start": "parcel Lecture-3-LayingTheFoundation/index.html",
+    "build": "parcel build Lecture-3-LayingTheFoundation/index.html",
     "test": "jest"
   },
   "repository": {
