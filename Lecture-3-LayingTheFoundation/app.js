@@ -30,7 +30,7 @@ const Heading3 = () => (
 //Component Composition
 
 const Title = () => {
-    return <h1>30-10-2025 ----- Friday</h1>
+    return <h1 className="title">30-10-2025 ----- Friday</h1>
 }
 
 const Diary = () => (
@@ -42,11 +42,31 @@ const Diary = () => (
     </div>
 )
 
+const title = (
+    <h1>Learning React from sratch</h1>
+)
+
+const count = 10000;
+
+const Head = () => (
+    <div className="parent">
+        {/* 2 ways to inject another function */}
+        {/* {Title()} */}
+        {/* <Title/> */}
+        <Title></Title>
+
+        {title} 
+        <h2>{count}</h2>
+        <h1 id="heading">
+        React........
+        </h1>
+    </div>
+)
 const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.render(jsxHeading);
 
-root.render(<Heading/>)
-root.render(<Heading2/>)
-root.render(<Heading3/>)
-
-root.render(<Diary/>)
+// root.render(<Heading/>)
+// root.render(<Heading2/>)
+// root.render(<Heading3/>)
+// root.render(<Diary/>)
+root.render(<Head/>)
