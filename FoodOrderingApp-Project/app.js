@@ -20,7 +20,7 @@ const Header = () => {
 };
 
 const RestaurantCard = ({ resData }) => {
-    const { name, cuisines, avgRating, sla, cloudinaryImageId } = resData.info;
+    const { name, cuisines, avgRating, costForTwo, sla, cloudinaryImageId } = resData.info;
 
     return (
         <div className="res-card" style={{ backgroundColor: "#f0f0f0" }}>
@@ -37,6 +37,7 @@ const RestaurantCard = ({ resData }) => {
                 <h3 className="res-name">{name}</h3>
                 <h4>{cuisines.join(", ")}</h4>
                 <h4>{avgRating} ⭐</h4>
+                <h4>{costForTwo}</h4>
                 <h4>{sla.deliveryTime} min</h4>
             </div>
         </div>
